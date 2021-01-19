@@ -1,0 +1,4 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop    database: hsql    generate-ddl: true    show-sql: true  profiles:    active:    - dev
