@@ -18,4 +18,5 @@ public class InterviewQuestionsController {
 	public List<InterviewQuestions> getAllInterviewQuestionsAndAnswers(){
 		return iqs.listAllIQs();
 	}
+	
 }

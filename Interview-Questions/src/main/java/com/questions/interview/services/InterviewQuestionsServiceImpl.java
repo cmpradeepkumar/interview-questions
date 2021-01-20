@@ -29,14 +29,12 @@ public class InterviewQuestionsServiceImpl implements InterviewQuestionsService{
 
 	@Override
 	public void delete(long id) {
-		// TODO Auto-generated method stub
-		
+		iQr.deleteById(id);
 	}
 
 	@Override
 	public InterviewQuestions getById(long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return iQr.findById(id).get();
 	}
 	
 }
