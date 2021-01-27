@@ -1,0 +1,8 @@
+spring:  profiles:    active:    - prod
+
+---
+spring:
+  profiles: dev
+  jpa:
+    hibernate:
+      ddl-auto: create-drop    database: hsql    generate-ddl: true    show-sql: true---spring:  profiles: prod  datasource:#     url: jdbc:oracle:thin:@192.168.0.194:1521/XE     url: jdbc:postgresql://192.168.0.194:5432/XE     username: scott     password: tiger     driver-class-name: oracle.jdbc.driver.OracleDriver  jpa:    hibernate:      ddl-auto: update    database: oracle    show-sql: true    generate-ddl: true  devtools:    add-properties: true
